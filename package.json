@@ -4,11 +4,25 @@
   "description": "A coding challenge to assess your ability to navigate an express server implementation.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "export NODE_ENV=test; mocha --timeout 5000  --exit --recursive test",
+    "coverage":"export NODE_ENV=test; nyc mocha --timeout 5000  --exit --recursive test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.6",
+    "mongoose-unique-validator": "^2.0.3",
+    "nyc": "^14.1.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
   }
 }

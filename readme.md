@@ -52,3 +52,7 @@ You can run the application by typing:
 ## The structure of this repository
 The structure of this repository should be relatively self-explanatory. 
 Use the appropriate directory for your code. A basic example has been provided for the index route.
+
+## important note
+- need to feed in atleast one institute and one book as defined in the schema 
+- postman collection file provided
